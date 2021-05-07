@@ -1,0 +1,17 @@
+ramo_inicial("Eh um mamifero?").
+
+:- dynamic ramo_sim/2.
+ramo_sim("Eh um mamifero?", "Tem listras?").
+ramo_sim("Eh uma ave?", "Ele voa?").
+
+:- dynamic ramo_nao/2.
+ramo_nao("Eh um mamifero?", "Eh uma ave?").
+
+:- dynamic folha_sim/2.
+folha_sim("Tem listras?", "zebra").
+folha_sim("Ele voa?", "aguia").
+
+:- dynamic folha_nao/2.
+folha_nao("Tem listras?", "leao").
+folha_nao("Ele voa?", "pinguin").
+folha_nao("Eh um passaro?", "lagarto").
